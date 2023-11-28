@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #3da6d5;
+    overflow: hidden;
+}
+/* Clock container*/
+.clock-container{
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 10px;
+    box-shadow: -1px 10px 10px 5px rgba(12, 10, 10, 0.301);
+}
+/* Clock Image */
+.clock-image{
+    width: 5rem;
+    height: 5rem;
+}
+.clock-image img{
+    width: 100%;
+    height: 100%;
+}
+/* Time Text */
+.time span{
+    font-size: 1.5rem ;
+    font-weight: 500;
+}
+/* Alarm Setting Section */
+.alarm{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+}
+.alarm .select-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alarm .select-menu select{
+    width: 22%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: .7rem;
+    font-weight: 500;
+    padding-inline:2px;
+}
+.alarm .select-menu select option{
+    border-radius: 0;
+    background-color: #3da6d5;
+    border: 1px solid black;
+}
+.alarm .select-menu select option:first-child{
+    display: none;
+}
+/* Set Alarm Button */
+.alarm .set-alarm-btn{
+    width: 100%;
+    
+}
+.alarm .set-alarm-btn button{
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: #3da6d5;
+    color: white;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: .900rem;
+    transition: ease .4s;
+}
+.alarm .set-alarm-btn button:hover{
+    border: 2px solid rgb(148, 148, 0);
+    background-color: aliceblue;
+    color: black;
+}
+/* Alarm List */
+.alarm-list{
+    width: 100%;
+    padding-inline: 5px;
+    text-align: center;
+}
+.alarm-list p{
+    font-size: .975rem;
+    font-weight: 500;
+    color: #ddc837;
+    margin-bottom: 8px;
+}
+.alarm-list ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+.alarm-list ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3da6d5;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: .875rem;
+    font-weight: 500;
+}
+.delete-btn{
+    color: #3da6d5;
+    cursor: pointer;
+}

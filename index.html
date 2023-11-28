@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font-awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,200&family=Lato:wght@100;300;400;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-container">
+        <div class="clock-image">
+          <img src="images/imgbin_alarm-clock-png (1).png" alt="" />
+        </div>
+        <div class="time">
+          <span id="hour"></span>
+          <span>:</span>
+          <span id="min"></span>
+          <span>:</span>
+          <span id="sec"></span>
+          <span> </span>
+          <span id="mid-day"></span>
+        </div>
+        <div class="alarm">
+          <div class="select-menu">
+            <select name="hour" id="hour">
+              <option value="0">Hour</option>
+            </select>
+            <select name="min" id="min">
+              <option value="0">Minute</option>
+            </select>
+            <select name="sec" id="sec">
+                <option value="0">Second</option>
+              </select>
+            <select name="ampm" id="ampm">
+              <option value="0">AM/PM</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          <div class="set-alarm-btn">
+            <button onclick="setEvent()">Set Alarm</button>
+          </div>
+        </div>
+        <div class="alarm-list">
+          <p>Alarms</p>
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Java-Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
